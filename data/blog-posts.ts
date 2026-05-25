@@ -1,0 +1,88 @@
+import { BlogPost } from '@/types'
+
+export const blogPosts: BlogPost[] = [
+  {
+    slug: 'importance-of-tajweed-in-quran-recitation',
+    title: 'The Importance of Tajweed in Quran Recitation',
+    excerpt: 'Discover why Tajweed is essential for every Muslim and how mastering the rules of Quran recitation brings you closer to the original revelation.',
+    content: '',
+    author: 'Ustadh Abdul Rahman',
+    publishedAt: '2024-12-15',
+    readingTime: '6 min read',
+    category: 'Tajweed',
+    tags: ['Tajweed', 'Quran', 'Recitation', 'Islamic Education'],
+    featuredImage: '/images/blog-tajweed.jpg',
+    featured: true,
+  },
+  {
+    slug: 'how-to-help-your-child-memorise-quran',
+    title: 'How to Help Your Child Memorise the Quran at Home',
+    excerpt: 'Practical tips and proven strategies for parents to support their child\'s Hifz journey from the comfort of home.',
+    content: '',
+    author: 'Ustadha Fatima Al-Rashid',
+    publishedAt: '2024-12-08',
+    readingTime: '8 min read',
+    category: 'Hifz',
+    tags: ['Hifz', 'Children', 'Parenting', 'Memorisation'],
+    featuredImage: '/images/blog-hifz.jpg',
+    featured: true,
+  },
+  {
+    slug: 'benefits-of-online-quran-classes-uk',
+    title: '7 Benefits of Online Quran Classes for UK Muslims',
+    excerpt: 'Learn why thousands of Muslim families across the UK are choosing online Quran education and how it compares to traditional in-person learning.',
+    content: '',
+    author: 'Quran Center UK Team',
+    publishedAt: '2024-11-28',
+    readingTime: '5 min read',
+    category: 'Online Learning',
+    tags: ['Online Classes', 'UK Muslims', 'E-learning', 'Quran'],
+    featuredImage: '/images/blog-online.jpg',
+    featured: false,
+  },
+  {
+    slug: 'noorani-qaida-complete-guide',
+    title: 'Noorani Qaida: The Complete Beginner\'s Guide',
+    excerpt: 'Everything you need to know about Noorani Qaida — what it is, why it matters, and how to get the most out of this foundational Islamic learning tool.',
+    content: '',
+    author: 'Ustadha Aisha Malik',
+    publishedAt: '2024-11-15',
+    readingTime: '7 min read',
+    category: 'Beginners',
+    tags: ['Noorani Qaida', 'Beginners', 'Arabic', 'Quran Learning'],
+    featuredImage: '/images/blog-qaida.jpg',
+    featured: false,
+  },
+  {
+    slug: 'quran-learning-tips-for-adults',
+    title: 'It\'s Never Too Late: Quran Learning Tips for Adults',
+    excerpt: 'Are you an adult who wants to learn the Quran but feel nervous about starting? Here\'s your complete guide to beginning your Quran journey at any age.',
+    content: '',
+    author: 'Ustadh Abdul Rahman',
+    publishedAt: '2024-11-01',
+    readingTime: '6 min read',
+    category: 'Adults',
+    tags: ['Adults', 'Beginners', 'Motivation', 'Quran'],
+    featuredImage: '/images/blog-adults.jpg',
+    featured: false,
+  },
+  {
+    slug: 'islamic-studies-why-it-matters-for-children',
+    title: 'Why Islamic Studies Matters for Your Children in the UK',
+    excerpt: 'Growing up as a Muslim in the UK comes with unique challenges. Discover how Islamic Studies education helps children build a strong Islamic identity.',
+    content: '',
+    author: 'Ustadha Aisha Malik',
+    publishedAt: '2024-10-20',
+    readingTime: '5 min read',
+    category: 'Islamic Studies',
+    tags: ['Islamic Studies', 'UK Muslims', 'Children', 'Identity'],
+    featuredImage: '/images/blog-islamic-studies.jpg',
+    featured: false,
+  },
+]
+
+export const getFeaturedPosts = () => blogPosts.filter((p) => p.featured)
+export const getPostBySlug = (slug: string) => blogPosts.find((p) => p.slug === slug)
+export const getRelatedPosts = (slug: string, category: string) =>
+  blogPosts.filter((p) => p.slug !== slug && p.category === category).slice(0, 3)
+export const getAllCategories = () => [...new Set(blogPosts.map((p) => p.category))]

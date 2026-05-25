@@ -1,0 +1,58 @@
+import { Testimonial } from '@/types'
+
+export const testimonials: Testimonial[] = [
+  {
+    id: '1',
+    name: 'Sarah Ahmed',
+    role: 'Parent',
+    location: 'Manchester',
+    content: 'Quran Center UK has been absolutely amazing for my two children. The teachers are so patient and knowledgeable. My 7-year-old has progressed incredibly fast and now reads the Quran with beautiful Tajweed. Highly recommend to every Muslim family!',
+    rating: 5,
+    course: 'Kids Quran Classes',
+  },
+  {
+    id: '2',
+    name: 'Mohammed Hassan',
+    role: 'Student (Adult)',
+    location: 'Levenshulme, Manchester',
+    content: 'I always wanted to learn the Quran properly as an adult but was embarrassed. Quran Center UK made me feel completely comfortable. Ustadha Fatima is an incredible teacher — patient, professional and so encouraging. Now I can read the Quran confidently!',
+    rating: 5,
+    course: 'Adults Quran Classes',
+  },
+  {
+    id: '3',
+    name: 'Zainab Patel',
+    role: 'Parent of Hifz Student',
+    location: 'Didsbury, Manchester',
+    content: 'My son joined the Hifz programme 18 months ago and is already on his 10th para. The structure of the programme is excellent and the teachers truly care about each child\'s progress. We receive weekly updates and he loves attending. JazakAllah Khair!',
+    rating: 5,
+    course: 'Hifz ul Quran',
+  },
+  {
+    id: '4',
+    name: 'Ayesha Khan',
+    role: 'Online Student',
+    location: 'Birmingham',
+    content: 'Being based in Birmingham, I wasn\'t sure about online classes, but Quran Center UK\'s online sessions are just as good as in-person. The Tajweed classes have transformed my recitation. The teachers are certified and very professional.',
+    rating: 5,
+    course: 'Tajweed Classes',
+  },
+  {
+    id: '5',
+    name: 'Omar Siddiqui',
+    role: 'Parent',
+    location: 'Gorton, Manchester',
+    content: 'We\'ve tried a few Quran centres but none compare to Quran Center UK. The professionalism, the teaching quality, and the Islamic environment are all excellent. My three children attend and each one loves it. Best investment we\'ve made for our children\'s Deen.',
+    rating: 5,
+    course: 'Multiple Courses',
+  },
+  {
+    id: '6',
+    name: 'Hafsa Mahmood',
+    role: 'Adult Student',
+    location: 'London (Online)',
+    content: 'I started online Noorani Qaida with Quran Center UK after reverting to Islam. The teachers are so welcoming and never made me feel out of place. Within 4 months I can now read the Quran! This centre has truly changed my life. 100% recommend.',
+    rating: 5,
+    course: 'Noorani Qaida',
+  },
+]
